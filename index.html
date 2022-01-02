@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <form id="Form1">
+        <h1>Details</h1>
+        <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="name" required>
+    <input type="tel" placeholder="Phone no." required>
+    <div class="btn-box">
+        <button type="button"id = "Next1">Next</button>
+    </div>
+
+    </form>
+
+
+    <form id="Form2">
+        <h1 style="margin-bottom: 20px;"> More Details</h1>
+               Gender:
+            <select>
+               <option>Male</option>
+               <option>Female</option>
+               <option>Other</option>
+            </select>
+
+        <input type="address" style = "margin-top:10px;" placeholder="Address" required>
+    <div class="btn-box">
+        <button type="button" id="Back1">Back</button>
+
+        <button type="button" id="Next2">Next</button>
+    </div>
+
+    </form>
+
+
+    <form id="Form3" name="myForm">
+        <h1>Preview</h1>
+        <input type="email" required placeholder="Email" name="Email">
+        <input type="text" placeholder="Name" name="Name" required>
+        <input type="tel" style="margin-bottom: 20px;" placeholder="Phone no." name="Phone" required>
+        Gender:
+        <select>
+           <option>Male</option>
+           <option>Female</option>
+           <option>Other</option>
+        </select>
+
+    <input type="address" name="Address" style = "margin-top:10px;" placeholder="Address" required>
+    <div class="btn-box">
+        <button type="button" id="Back2">Back</button>
+
+        <button type="button" onclick="return validateForm()" method = "post">Submit</button>
+    </div>
+
+    </form>
+
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Step1</small></div>
+        <div class="step-col"><small>Step2</small></div>
+        <div class="step-col"><small>Step3</small></div>
+
+    </div>
+</div>    
+
+
+<script src="script.js"></script>
+</body>
+</html>
